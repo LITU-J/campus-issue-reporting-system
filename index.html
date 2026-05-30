@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCare | Smart Campus Issue Tracker</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🏫</div>
+                <h2>CampusCare</h2>
+                <span>Smart Issue Tracker</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">✨ Home</a></li>
+                <li><a href="report-issue.html">📝 Report</a></li>
+                <li><a href="view-issues.html">👀 Issues</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Report Campus Issues<br>Get Them Fixed Fast ⚡</h1>
+                <p>Help us make our campus better by reporting maintenance issues, safety concerns, or facility problems. Your voice matters, and we're listening.</p>
+                <div class="hero-buttons">
+                    <a href="report-issue.html" class="btn btn-primary">📝 Report an Issue</a>
+                    <a href="view-issues.html" class="btn btn-secondary">🔍 Track Issues</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>How CampusCare Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>1. Report Issue</h3>
+                    <p>Fill out our simple form with details about the problem you've encountered on campus. Include location, type, and urgency level.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>2. Track Progress</h3>
+                    <p>Monitor the status of your reported issues with real-time updates. Know exactly when your issue is being addressed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>3. Get Resolution</h3>
+                    <p>Our campus maintenance team addresses issues promptly and marks them as resolved once completed successfully.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>Campus Impact 📈</h2>
+            <div class="stats-container" id="statsContainer">
+                <div class="stat">
+                    <div class="stat-number" id="totalIssues">0</div>
+                    <div class="stat-label">Total Issues Reported</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="pendingIssues">0</div>
+                    <div class="stat-label">Pending Resolution</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="resolvedIssues">0</div>
+                    <div class="stat-label">Successfully Resolved</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 CampusCare — Making Campuses Better Together ✨</p>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
